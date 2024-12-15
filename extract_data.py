@@ -7,8 +7,7 @@ import pandas as pd
 from sqlalchemy import create_engine
 
 # Define API details
-API_URL = "https://data.cdc.gov/resource/dttw-5yxu.json"  # Socrata API endpoint
-APP_TOKEN = "DVDdMVBH0t9Ausqgj6IxbvZha"  # Optional: Use if API requires authentication
+API_URL = "https://data.cdc.gov/resource/dttw-5yxu.json"  # Socrata API endpoint for BRFSS data
 
 # Function to fetch filtered data
 def fetch_all_data(api_url, app_token=None, max_records=2_760_000, batch_size=50_000):
